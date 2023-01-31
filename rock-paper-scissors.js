@@ -7,7 +7,9 @@ let player2 = prompt('Player 2: ')
 // scissors > paper
 // paper > rock
 
-if (player1 === 'rock' && player2 !== 'paper' && player2 !== 'rock') {
+if (player1 === player2) {
+    console.log('Its a Draw!')
+} else if (player1 === 'rock' && player2 !== 'paper' && player2 !== 'rock') {
     console.log('Player 1 wins')
 } else if (player1 === 'scissors' && player2 !== 'rock' && player2 !== 'scissors') {
     console.log('Player 1 wins')
